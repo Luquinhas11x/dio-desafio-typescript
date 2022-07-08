@@ -1,0 +1,114 @@
+@import 'index.css';
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    place-content: center center;
+    align-items: center;
+
+    background-color: var(--purple);
+}
+
+.todo__add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(195px, 50vw, 430px);
+}
+
+.todo__add--input {
+    display: flex;
+    text-align:center;
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px 0 10px 0;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.todo__add--button {
+    display: flex;
+    place-content: center center;
+    align-items: center;
+    min-width: 70%;
+    padding: 10px 35%;
+    margin-bottom: 35px;
+    border: none;
+
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.todo__add--button:hover {
+    background-color: var(--red-select);
+    color: var(--white-select);
+}
+
+.todo__list {
+    display: flex;
+    flex-direction: column-reverse;
+    place-content: center flex-start;
+    align-items: center;
+    width: clamp(50%, 80%, 90%);
+}
+
+.list--item {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    place-content: center space-between;
+    align-items: center;
+    margin: 2px 0 10px 0;
+    padding: 10px;
+    background-color: var(--white-select);
+    border-radius: 0.2rem;
+    color: var(--white);
+}
+
+.list--text {
+    
+}
+
+.list--text--title {
+    min-width: 100%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 17px;
+    color: var(--white);
+}
+
+.list--action button {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.list--action--edit {
+    font-weight: 600;
+    border-radius: 1rem;
+    
+    background-color: var(--red);
+    color: #ffff;
+}
+
+.list--action--delete {
+    margin-left: 8px;
+    border-radius: 1rem;
+
+    font-weight: 900;
+    
+    color: var(--purple);
+    background-color: var(--red);
+}
+
+@media screen and (max-width: 387px) {
+    .list--item {
+        flex-direction: column;
+    }
+
+    .list--item > div {
+        padding-top: 15px;
+    }
+}

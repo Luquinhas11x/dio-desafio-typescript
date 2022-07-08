@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;1,300&family=Oswald:wght@700&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --white:#E0DDE3;
+    --white-select:#e0dde377;
+    --purple: #241722;
+    --red: #F65751;
+    --red-select: #f6565156;
+    --green: #4F9D5D;
+    --green-select: #33c94f;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--purple);
+}
+
+#checked {
+    text-decoration: line-through;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+input:not([type="radio"]):not([type="checkbox"]), button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
